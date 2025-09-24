@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de mis Gatos 🐱</title>
+
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    #micarrusel {
+      height: 700px; 
+    }
+
+    #micarrusel .carousel-item img {
+      width: 100%;
+      height: 60%;
+      object-fit: contain; 
+      border-radius: 10px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 NAVBAR -->
+  <nav class="blue">
+    <div class="nav-wrapper container">
+      <a href="#!" class="brand-logo">🐾 Mis Gatos</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#micarrusel">Carrusel</a></li>
+        <li><a href="#cards">Tarjetas</a></li>
+        <li><a href="#footer">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🔹 INTRO CARD -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card blue lighten-3">
+          <div class="card-content black-text">
+            <span class="card-title">Gatos</span>
+            <p>Hola, mira a mis gatos 😺 <br>
+              Haz click en los botones para ver más fotos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔹 CAROUSEL -->
+  <div class="carousel carousel-slider center" id="micarrusel">    
+    <div class="carousel-item brown lighten-1 white-text" href="#one!">
+      <h2>Misha</h2>
+      <p>9 años<br>Le gusta acostarse en la ropa negra<br>Ronca cuando duerme</p>
+      <img src="Misha1.jpeg">
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
+        <i class="material-icons left">photo_library</i> Ver más fotos
+      </a>
+    </div>
+
+    <div class="carousel-item amber lighten-4 black-text" href="#two!">
+      <h2>Jimmy</h2>
+      <p>8 años<br>Suavecito<br>Muerde cuando lo acaricias</p>
+      <img src="Jimmy2.jpeg">
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal2">
+        <i class="material-icons left">photo_library</i> Ver más fotos
+      </a>
+    </div>
+
+    <div class="carousel-item green lighten-1 white-text" href="#three!">
+      <h2>Robin</h2>
+      <p>4 años<br>Le gusta que lo carguen<br>7kg 💀</p>
+      <img src="Robin1.jpeg">
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal3">
+        <i class="material-icons left">photo_library</i> Ver más fotos
+      </a>
+    </div>
+  </div>
+
+  <!-- 🔹 MODALES -->
+  <div id="modal1" class="modal">
+    <div class="modal-content black-text">
+      <h4>Fotos de Misha</h4>
+      <img src="Misha7.jpeg" width="150">
+      <img src="Misha3.jpeg" width="150">
+      <img src="Misha4.jpeg" width="150">
+      <img src="Misha5.jpeg" width="150">
+      <img src="Misha6.jpeg" width="150">
+      <img src="Misha8.jpeg" width="150">
+      <img src="Misha9.jpeg" width="150">
+      <img src="Misha10.jpeg" width="150">
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content black-text">
+      <h4>Fotos de Jimmy</h4>
+      <img src="Jimmy1.jpeg" width="150">
+      <img src="Jimmy4.jpeg" width="150">
+      <img src="Jimmy5.jpeg" width="150">
+      <img src="Jimmy6.jpeg" width="150">
+      <img src="Jimmy7.jpeg" width="150">
+      <img src="Jimmy8.jpeg" width="150">
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content black-text">
+      <h4>Fotos de Robin</h4>
+      <img src="Robin2.jpeg" width="150">
+      <img src="Robin3.jpeg" width="150">
+      <img src="Robin4.jpeg" width="150">
+      <img src="Robin5.jpeg" width="150">
+      <img src="Robin6.jpeg" width="150">
+      <img src="Robin8.jpeg" width="150">
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+
+  <!-- 🔹 PARALLAX -->
+  <div class="parallax-container">
+    <div style="height:400px; text-align:center;">
+  <img src="fondo-gatos.jpg" style="width:100%; height:100%; object-fit:cover;">
+</div>
+    
+  </div>
+
+  <!-- 🔹 EXTRA CARDS -->
+  <div class="container" id="cards">
+    <h4 class="center-align">Más sobre ellos</h4>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="Misha2.jpeg">
+            <span class="card-title">Misha</span>
+          </div>
+          <div class="card-content">
+            <p>Duerme mucho y le gusta comer plantas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="Jimmy3.jpeg">
+            <span class="card-title">Jimmy</span>
+          </div>
+          <div class="card-content">
+            <p>Es curioso, juguetón y a veces un poco travieso.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="Robin7.jpeg">
+            <span class="card-title">Robin</span>
+          </div>
+          <div class="card-content">
+            <p>Le gustan los juguetes y es el más grande de todos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔹 FOOTER -->
+  <footer class="page-footer blue" id="footer">
+    <div class="container center-align">
+      © 2025 Página de mis gatos 🐾 | Hecha con ❤️ | Mira-mis-gatos@miau.com
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- 🔹 INITIALIZATIONS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elemsCarousel = document.querySelectorAll('.carousel');
+      M.Carousel.init(elemsCarousel, { fullWidth: true, indicators: true });
+
+      var elemsModal = document.querySelectorAll('.modal');
+      M.Modal.init(elemsModal);
+
+      var elemsParallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(elemsParallax);
+    });
+  </script>
+
+</body>
+</html>
